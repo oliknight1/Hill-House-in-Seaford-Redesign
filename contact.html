@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hill House in Seaford</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+
+</head>
+
+
+<body id="body">
+
+    <main class="contact-main">
+        <!-- Navigation -->
+        <nav>
+
+            <div class="overlay">
+
+
+                <ul>
+                    <li id="home" class="animate-nav">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li id="stay" class="animate-nav ">
+                        <a href="stay.html">Stay</a>
+                    </li>
+                    <li id="menu" class="animate-nav">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li id="contact" class="animate-nav current-page">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="contact-icons">
+
+                    <a href="tel:01323899759" class="animate-nav">
+                        <img src="images/icons/phone.svg" alt="Phone Number Icon" id="phone" class="animate-nav" />
+                    </a>
+                    <a href="mailto:stay@hillhouseinseaford.co.uk" class="animate-nav">
+                        <img src="images/icons/email.svg" alt="E-Mail Icon" id="email" class="animate-nav" />
+                    </a>
+
+                </div>
+
+
+
+            </div>
+        </nav>
+
+        <div class="menu-button">
+            <div class="line-1 "></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+
+        <!-- Main Tag Content -->
+        <section class="title">
+            <h1>Contact</h1>
+        </section>
+        <div class="description">
+            <p>
+                Get in touch.
+            </p>
+        </div>
+
+        <div class="scroll-btn">
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="scroll-btn-text">
+            <p>Scroll down</p>
+        </div>
+
+    </main>
+
+    <div class="contact-wrapper">
+        <div class="contact-container" data-scroll>
+            <h2>Contact us</h2>
+            <form id="form">
+                <div class="input-container">
+                    <input type="text" required minlength="3" name="fname" id="fname-input" />
+                    <label for="fname-input" class="label">
+                        <span class="label-content">First Name</span>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <input type="text" required minlength="3" name="lname" id="lname-input" />
+                    <label for="lname-input" class="label">
+                        <span class="label-content">Last Name</span>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <input type="email" required name="email" id="email-input" />
+                    <label for="email-input" class="label">
+                        <span class="label-content">E-Mail</span>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <input type="number" required name="tel" id="tel-input" />
+                    <label for="tel-input" class="label">
+                        <span class="label-content">Telephone Number</span>
+                    </label>
+                </div>
+                <div class=" input-container">
+                    <input type="text" id="arrival" name="arrival" required autocomplete="off">
+                    <label for="arrival" class="label">
+                        <span class="label-content">Arrival</span>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="depart" name="depart" required autocomplete="off">
+                    <label for="depart" class="label">
+                        <span class="label-content">Departure</span>
+                    </label>
+                </div>
+
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+
+
+        </div>
+    </div>
+    <div class="submitted-wrapper">
+        <div class="submitted-container">
+            <h2>Sent</h2>
+            <h3>Thanks for getting in touch!</h3>
+            <div class="svg-container">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" /></svg>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <footer>
+
+        <div>
+            <h4>Contact</h4>
+            <ul>
+
+                <li><a href="mailto:stay@hillhouseinseaford.co.uk"> stay@hillhouseinseaford.co.uk</a></li>
+                <li><a href="tel:01323899759">01323 899759</a></li>
+                <li>Eastbourne Road</li>
+                <li>BN25 4BG</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Other</h4>
+            <ul>
+                <li><a href="policy.html">Privacy</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyChYQLK8MU_WFVvXevfQNx6Fqb0m960Cvc&q=place_id:ChIJ5V4Kxs1730cRK0egA2LEX_c"
+                allowfullscreen>
+
+            </iframe>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"> </script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
